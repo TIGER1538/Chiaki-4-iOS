@@ -21,7 +21,7 @@ jobs:
         xcodebuild
           -sdk iphoneos
           -configuration Release
-          -project Chiaki iOS.xcodeproj
+          -project 'Chiaki iOS.xcodeproj'
           -scheme chiaki
           archive
           -archivePath ./
