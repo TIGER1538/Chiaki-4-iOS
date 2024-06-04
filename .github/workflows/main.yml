@@ -11,10 +11,10 @@ jobs:
     - name: Show the version of Xcode to build App
       run: xcodebuild -version
 
-    - name: Show build scheme
-      run: xcodebuild
-        -workspace 'Chiaki iOS.xcodeproj/project.xcworkspace'
-        -list
+#    - name: Show build scheme
+#      run: xcodebuild
+#        -workspace 'Chiaki iOS.xcodeproj/project.xcworkspace'
+#        -list
         
     - name: Xcode build
       run: set -o pipefail && 
@@ -22,7 +22,7 @@ jobs:
           -sdk iphoneos
           -configuration Release
           -workspace 'Chiaki iOS.xcodeproj/project.xcworkspace'
-          -scheme Chiaki
+          -scheme chiaki
           archive
           -archivePath ./
           CODE_SIGNING_ALLOWED=NO
