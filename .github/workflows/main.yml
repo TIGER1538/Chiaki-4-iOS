@@ -1,0 +1,23 @@
+name: Build App
+on: push
+jobs:
+  build:
+    runs-on: macOS-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Show installed Xcode versions
+      run: ls /Application | grep 'Xcode'
+
+    - name: Show the version of Xcode to build App
+      run: xcodebuild -version
+
+    - name: Xcode build
+      run: set -o pipefail && 
+        xcodebuild
+          -sdk iphoneos
+          -configuration Release
+          -workspace 'Chiaki iOS.xcodeproj/project.xcworkspace'
+          -scheme Chiaki
+          archive
+          -archivePath ./
+          CODE_SIGNING_ALLOWED=NO
