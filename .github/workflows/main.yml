@@ -21,9 +21,8 @@ jobs:
         xcodebuild
           -sdk iphoneos
           -configuration Release
-          -workspace 'Chiaki iOS.xcodeproj/project.xcworkspace'
+          -project Chiaki iOS.xcodeproj
           -scheme chiaki
-          -destination 'platform=iOS, name=iPhone 15'
           archive
           -archivePath ./
           CODE_SIGNING_ALLOWED=NO
