@@ -6,7 +6,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Show installed Xcode versions
-      run: ls /Application | grep 'Xcode'
+      run: ls /Applications | grep 'Xcode'
 
     - name: Show the version of Xcode to build App
       run: xcodebuild -version
