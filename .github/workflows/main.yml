@@ -11,6 +11,11 @@ jobs:
     - name: Show the version of Xcode to build App
       run: xcodebuild -version
 
+    - name: Show build scheme
+      run: xcodebuild
+        -workspace 'Chiaki iOS.xcodeproj/project.xcworkspace'
+        -list
+        
     - name: Xcode build
       run: set -o pipefail && 
         xcodebuild
