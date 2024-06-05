@@ -16,9 +16,6 @@ jobs:
 #        -workspace 'Chiaki iOS.xcodeproj/project.xcworkspace'
 #        -list
 
-    - name: Prepare for making cache
-      run: mkdir -p ~/qt_v5.15.2/Qt
-      
     - name: Install Qt
       uses: jurplel/install-qt-action@v3
       with:
