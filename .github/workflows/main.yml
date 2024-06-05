@@ -16,13 +16,17 @@ jobs:
 #        -workspace 'Chiaki iOS.xcodeproj/project.xcworkspace'
 #        -list
       
-    - uses: tecolicom/actions-use-homebrew-tools@v1
-#    - name: Install Qt@5 via homebrew or using cache
+    - name: Install Qt
+      uses: jurplel/install-qt-action@v3
       with:
-        tools: qt@5
-
-    - name: Show qt folder
-      run: ls /opt/homebrew/opt/qt@5/
+        version: '5.15.2'
+        host: 'mac'
+        target: 'ios'
+        dir: '~/qt_v5.15.2/'
+        install-deps: 'true'
+        cache: 'true'
+        cache-key-prefix: 'install-qt-action'
+        set-env: 'true'
       
     - name: Xcode build
       run: set -o pipefail && 
