@@ -11,9 +11,6 @@ jobs:
     - name: Show the version of Xcode to build App
       run: xcodebuild -version
 
-    - name: Show Qt path
-      run: echo $QT_ROOT_DIR
-
     - name: Install Qt
       uses: jurplel/install-qt-action@v3
       with:
@@ -24,6 +21,9 @@ jobs:
         cache: 'true'
         cache-key-prefix: 'install-qt-action'
         set-env: 'true'
+
+    - name: Show Qt path
+      run: echo $QT_ROOT_DIR
       
     - name: Xcode build
       run: set -o pipefail && 
