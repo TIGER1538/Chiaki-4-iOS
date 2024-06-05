@@ -25,7 +25,7 @@ jobs:
         version: '5.15.2'
         host: 'mac'
         target: 'ios'
-        dir: '~/qt_v5.15.2/'
+        dir: '~/qt_v5.15.2'
         install-deps: 'true'
         cache: 'true'
         cache-key-prefix: 'install-qt-action'
