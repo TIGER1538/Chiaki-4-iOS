@@ -20,6 +20,9 @@ jobs:
 #    - name: Install Qt@5 via homebrew or using cache
       with:
         tools: qt@5
+
+    - name: Show qt folder
+      run: ls /opt/homebrew/opt/qt@5/
       
     - name: Xcode build
       run: set -o pipefail && 
