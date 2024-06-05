@@ -24,7 +24,6 @@ jobs:
 
     - name: Show Qt path
       run: echo ${{Qt5_DIR}}
-           echo "QT_ROOT_DIR=${{Qt5_DIR}}" >> $GITHUB_ENV
       
     - name: Xcode build
       run: set -o pipefail && 
