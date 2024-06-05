@@ -11,10 +11,8 @@ jobs:
     - name: Show the version of Xcode to build App
       run: xcodebuild -version
 
-#    - name: Show build scheme
-#      run: xcodebuild
-#        -workspace 'Chiaki iOS.xcodeproj/project.xcworkspace'
-#        -list
+    - name: Show Qt path
+      run: echo $QT_ROOT_DIR
 
     - name: Install Qt
       uses: jurplel/install-qt-action@v3
