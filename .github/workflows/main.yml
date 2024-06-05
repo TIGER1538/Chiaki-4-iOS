@@ -23,7 +23,7 @@ jobs:
         set-env: 'true'
 
     - name: Show Qt path
-      run: echo ${{Qt5_DIR}}
+      run: echo ${Qt5_DIR}
       
     - name: Xcode build
       run: set -o pipefail && 
