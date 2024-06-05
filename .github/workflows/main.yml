@@ -15,7 +15,10 @@ jobs:
 #      run: xcodebuild
 #        -workspace 'Chiaki iOS.xcodeproj/project.xcworkspace'
 #        -list
-        
+
+    - name: Install Qt@5 via homebrew
+      run: brew install qt@5
+     
     - name: Xcode build
       run: set -o pipefail && 
         xcodebuild
