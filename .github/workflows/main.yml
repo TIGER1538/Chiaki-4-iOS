@@ -17,7 +17,7 @@ jobs:
 #        -list
 
     - name: Prepare for making cache
-      run: mkdir ~/qt_v5.15.2
+      run: mkdir ~/qt_v5.15.2/Qt
       
     - name: Install Qt
       uses: jurplel/install-qt-action@v3
