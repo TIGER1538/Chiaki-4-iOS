@@ -10,7 +10,7 @@ MAKEFILE      = project.pbxproj
 
 EQ            = =
 
-QMAKE    = /opt/homebrew/opt/qt@5/ios/bin/qmake
+QMAKE    = ~/qt_v5.15.2/Qt/ios/bin/qmake
 Chiaki\ iOS.xcodeproj/project.pbxproj: chiaki.pro ../Qt/5.15.2/ios/mkspecs/macx-ios-clang/qmake.conf ../Qt/5.15.2/ios/mkspecs/features/spec_pre.prf \
 		../Qt/5.15.2/ios/mkspecs/qdevice.pri \
 		../Qt/5.15.2/ios/mkspecs/features/device_config.prf \
