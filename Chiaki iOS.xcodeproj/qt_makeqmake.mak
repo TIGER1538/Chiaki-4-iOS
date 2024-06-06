@@ -270,7 +270,7 @@ Chiaki\ iOS.xcodeproj/project.pbxproj: chiaki.pro ../Qt/5.15.2/ios/mkspecs/macx-
 		../Qt/5.15.2/ios/plugins/imageformats/libqwbmp_debug.prl \
 		../Qt/5.15.2/ios/plugins/imageformats/libqwebp_debug.prl \
 		../Qt/5.15.2/ios/lib/libQt5Widgets_debug.prl
-	$(QMAKE) -o Chiaki\ iOS.xcodeproj/project.pbxproj chiaki.pro -spec macx-clang CONFIG+=iphoneos CONFIG+=device CONFIG+=qml_release -after
+	$(QMAKE) -o Chiaki\ iOS.xcodeproj/project.pbxproj chiaki.pro -spec macx-ios-clang CONFIG+=iphoneos CONFIG+=device CONFIG+=qml_release -after
 	@echo 'warning: Xcode project has been regenerated, custom settings have been lost. Use CONFIG+=no_autoqmake to prevent this behavior in the future, at the cost of requiring manual project change tracking.'
 ../Qt/5.15.2/ios/mkspecs/features/spec_pre.prf:
 ../Qt/5.15.2/ios/mkspecs/qdevice.pri:
